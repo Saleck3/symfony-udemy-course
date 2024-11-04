@@ -99,7 +99,7 @@ class MicroPostController extends AbstractController
             // Redirect
         }
 
-        return $this->renderForm(
+        return $this->render(
             'micro_post/add.html.twig',
             [
                 'form' => $form
@@ -134,7 +134,7 @@ class MicroPostController extends AbstractController
             // Redirect
         }
 
-        return $this->renderForm(
+        return $this->render(
             'micro_post/edit.html.twig',
             [
                 'form' => $form,
@@ -175,7 +175,7 @@ class MicroPostController extends AbstractController
             // Redirect
         }
 
-        return $this->renderForm(
+        return $this->render(
             'micro_post/comment.html.twig',
             [
                 'form' => $form,
